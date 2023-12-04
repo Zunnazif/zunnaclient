@@ -4,6 +4,6 @@
 - Dekstop Mode
 ![Github Graph](./assets/dekstop-mode.jpg)
 
-- Mobile Mode
-![Github Graph](./assets/mobile-mode.jpg)
+- Mobile Mode 
+![![PR Example]](./assets/mobile-mode.jpg)
 
