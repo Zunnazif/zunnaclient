@@ -26,7 +26,7 @@ export default async function contains(){
         <span style="color:#15c; text-decoration:none; vertical-align:bottom">${item.sku}. ${item.bookName}</span>
         </a>
         </div><br>`
-    })
+    }).join("")
     
     return result
 }

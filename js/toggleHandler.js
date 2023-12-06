@@ -39,3 +39,12 @@ function addSKUonInput(sku){
     skuID.value += ` ${sku} `;
 
 }
+
+function upDown(){
+    let addBook1 = document.getElementById('addBook1')
+    let togel1 = document.getElementById('togel1')
+
+    addBook1.classList.add('hidden')
+    togel1.innerHTML = '<i class="fa-solid fa-chevron-down"></i>'
+
+}
