@@ -2,6 +2,7 @@ let getNameBook = document.getElementById('getNameBook');
 let getSKUBook = document.getElementById('getSKUBook');
 let tb = document.getElementById('tb');
 
+
 async function getBookByName () {
     let request = await fetch('https://zunnaserver.vercel.app/ebook/GetMultipleEBookByName', {
         method: 'POST',
@@ -22,7 +23,7 @@ async function getBookByName () {
     if (isSucceeded == true) {
         let arrMaping = eBooks.map( (item, index) => {
             return `<tr class="hover:bg-gray-900 cursor-pointer">
-            <td class="py-3.5 px-4 ">${item.sku}</td>
+            <td class="py-3.5 px-4" onclick="addSKUonInput(${item.sku})">${item.sku}</td>
             <td class="py-3.5 px-4 text-start tracking-wider"><a href="${item.link}" target="_blank">${item.bookName}</a></td>
         </tr>`
         }).join("")
@@ -59,7 +60,7 @@ async function getBookBySKU () {
     if (isSucceeded == true) {
         let arrMaping = eBooks.map( (item, index) => {
             return `<tr class="hover:bg-gray-900 cursor-pointer">
-            <td class="py-3.5 px-4 ">${item.sku}</td>
+            <td class="py-3.5 px-4 " onclick="addSKUonInput(${item.sku})">${item.sku}</td>
             <td class="py-3.5 px-4 text-start tracking-wider"><a href="${item.link}" target="_blank">${item.bookName}</a></td>
         </tr>`
         }).join("")
