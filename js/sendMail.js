@@ -36,7 +36,7 @@ form.addEventListener('submit', async(e) => {
 
     if (response.isSucceeded){
         alertBorder.classList.remove('hidden')
-        sending.innerHTML = response.response.to[0]
+        sending.innerHTML = response.response
         submit.disabled = false;
         submit.classList.add('text-gray-400', 'hover:bg-slate-600');
         submit.classList.remove('text-black', 'cursor-progress');

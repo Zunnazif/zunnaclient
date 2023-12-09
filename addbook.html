@@ -86,6 +86,9 @@
             <div class="max-w-md mx-auto bg-slate-950 rounded-2xl p-5 shadow-md">
                 <form id="form">
                     <div class="addBook bg-gray-400 p-3 rounded-md flex flex-col mb-3">
+                        <div class="bg-gray-500 flex justify-between px-2 rounded-md mb-0.5">
+                            <h3 class="font-bold">Add 1</h3>
+                        </div>
                         <div id="addBook1" class="">
                             <div class="mb-4">
                                 <label for="sku" class="block text-gray-600 text-sm font-medium mb-2">No. SKU<span class="text-red-700"> *</span></label>
@@ -102,13 +105,21 @@
                                 <input type="text" id="skuID" class="block w-full p-2.5 ps-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="https://drive.google.com/file/..." required>
                             </div>
                         </div>
-                        <div id="togel1" onclick="upDown()" class="text-xl text-center cursor-pointer bg-gray-500 rounded-md hover:bg-gray-600 active:bg-gray-500">
+                        <div id="togel1" onclick="upDown('addBook1', 'togel1')" class="text-xl text-center cursor-pointer bg-gray-500 rounded-md hover:bg-gray-600 active:bg-gray-500">
                             <i class="fa-solid fa-chevron-up "></i>
                         </div>
                     </div>
 
                     <div class="addBook bg-gray-400 p-3 rounded-md flex flex-col mb-3">
-                        <div>
+                        <div class="bg-gray-500 flex justify-between px-2 rounded-md mb-0.5">
+                            <h3 class="font-bold">Add 2</h3>
+                            <svg class="w-4" viewBox="0 0 240 272" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M82.9333 10C80.4 11.0667 77.2 14.4 74.9333 17.8667L71.3333 23.8667L46 24C24.6667 24 20 24.4 16 26.4C10.5333 29.0667 8 33.4667 8 40.4C8 44.5334 8.93333 46.5334 12.5333 50.1334L17.0667 54.6667H119.2H221.2L226 50.5334C230.267 46.8 230.667 45.7334 230.667 39.4667C230.667 33.4667 230.133 32 226.533 28.5334L222.533 24.6667L194.8 24.2667L167.2 23.8667L164.267 18.2667C159.2 8.66668 159.333 8.66668 121.333 8.40002C94 8.13335 86.5333 8.40002 82.9333 10Z" fill="black"/>
+                                <path d="M24 72.9333C24 75.4667 28.2667 147.733 30 176C33.3333 228.8 34.6667 244.533 36 248.8C37.6 253.733 43.2 259.333 48.4 261.2C50.9333 262.133 75.3333 262.667 120.133 262.667C194.933 262.667 192.667 262.933 199.2 254.4C203.733 248.267 204.933 241.6 206.667 212.667C210.8 139.867 212 118.933 212.533 114.667C212.8 112.133 213.467 101.467 214 90.9333L214.933 72H119.467C66.9333 72 24 72.4 24 72.9333Z" fill="#374151"/>
+                                <path d="M91.4667 124C93.4667 124.8 100.667 130.933 107.467 137.6L119.867 149.733L132.8 136.933C140.133 129.6 147.067 124 149.067 123.6C154.133 122.667 159.867 125.2 162 129.467C166 137.067 164.933 139.467 151.333 153.2C144.4 160.4 138.667 166.8 138.667 167.467C138.667 168.267 144 174.133 150.533 180.8C157.2 187.467 162.8 194.267 163.333 196.267C165.467 204.933 160.133 212 151.6 212C146.667 212 145.333 211.067 133.467 199.333C126.267 192.4 119.867 186.667 119.2 186.667C118.533 186.667 112.267 192.4 105.333 199.333C93.3333 211.333 92.4 212 87.0667 212C82.2667 212 80.9333 211.333 78.1333 207.6C71.8667 199.333 73.6 195.333 91.6 178.133C95.4667 174.533 99.0667 170.4 99.4667 168.933C100.133 167.067 97.2 163.333 87.4667 153.333C77.0667 142.8 74.6667 139.6 74.6667 136.4C74.6667 131.867 78.9333 125.733 83.2 124C86.9333 122.4 87.2 122.4 91.4667 124Z" fill="black"/>
+                                </svg>
+                        </div>
+                        <div id="addBook2">
                             <div class="mb-4">
                                 <label for="sku" class="block text-gray-600 text-sm font-medium mb-2">No. SKU<span class="text-red-700"> *</span></label>
                                 <input type="number" id="name" class="block w-full p-2.5 ps-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="x x x" required>
@@ -124,7 +135,7 @@
                                 <input type="text" id="skuID" class="block w-full p-2.5 ps-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="https://drive.google.com/file/..." required>
                             </div>
                         </div>
-                        <div onclick="upDown()" class="text-xl text-center cursor-pointer bg-gray-500 rounded-md">
+                        <div id="togel2" onclick="upDown('addBook2', 'togel2')" class="text-xl text-center cursor-pointer bg-gray-500 rounded-md">
                             <i class="fa-solid fa-chevron-up "></i>
                         </div>
                     </div>

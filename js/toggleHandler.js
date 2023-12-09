@@ -40,11 +40,17 @@ function addSKUonInput(sku){
 
 }
 
-function upDown(){
-    let addBook1 = document.getElementById('addBook1')
-    let togel1 = document.getElementById('togel1')
+function upDown(idAddBook, togelUpDown){
+    let addBook = document.getElementById(idAddBook)
+    let togel = document.getElementById(togelUpDown)
 
-    addBook1.classList.add('hidden')
-    togel1.innerHTML = '<i class="fa-solid fa-chevron-down"></i>'
+    if (!addBook.classList.contains('hidden')){
+        addBook.classList.add('hidden')
+        togel.innerHTML = '<i class="fa-solid fa-chevron-down"></i>'
+    } else {
+        addBook.classList.remove('hidden')
+        togel.innerHTML = '<i class="fa-solid fa-chevron-up "></i>'
+    }
+
 
 }
