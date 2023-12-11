@@ -1,5 +1,6 @@
 let getNameBook = document.getElementById('getNameBook');
 let getSKUBook = document.getElementById('getSKUBook');
+
 let tb = document.getElementById('tb');
 
 
