@@ -27,9 +27,6 @@ function changeHandler() {
     thSKU.classList.add("bg-gray-800");
     getNameBook.value = "";
   }
-
-  console.log("getNameBook", getNameBook.value);
-  console.log("getSKUBook", getSKUBook.value);
 }
 
 function alertHandler() {
