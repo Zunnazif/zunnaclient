@@ -42,7 +42,6 @@ form.addEventListener("submit", async (e) => {
     }
   );
   let response = await request.json();
-  console.log(response);
 
   if (response.isSucceeded) {
     alertBorder.classList.remove("-left-full");
