@@ -24,7 +24,7 @@ form.addEventListener("submit", async (e) => {
   let bodyFecth = {
     nameFrom: "Zunna Digital",
     sendFrom: "zunna.digital47@gmail.com",
-    password: "jtli vpnl pcwc gdga",
+    password: "qjbo vdys vrfk vehp",
     nameTo: nameTo,
     sendTo: sendTo,
     subject: "E-Book",
