@@ -111,7 +111,17 @@
                     <button id="submit" type="submit" class="w-full bg-slate-800 text-gray-400 py-2 px-4 rounded-md hover:bg-slate-600 active:outline-none active:bg-slate-800 active:text-black font-bold">Kirim</button>
                 </div>
             </form>
+            <div class="flex justify-between text-gray-400 font-bold ">
+                <div onclick="email()" class="mx-auto bg-slate-800 rounded-md px-10 py-2 shadow-md mt-3 cursor-pointer hover:bg-slate-600 active:outline-none active:bg-slate-800 active:text-black">
+                    Email Pribadi
+                </div>
+                <div onclick="qris()" class="mx-auto bg-slate-800 rounded-md px-14 py-2 shadow-md mt-3 cursor-pointer hover:bg-slate-600 active:outline-none active:bg-slate-800 active:text-black">
+                    Kode Qris
+                </div>
+            </div>
         </div>
+
+        
     
         <div class="max-w-2xl mx-auto bg-slate-950 rounded-2xl p-8 shadow-md mt-3">
             <div class="relative">
@@ -141,6 +151,18 @@
     </div>
     
 </body>
+
+<script>
+    function email() {
+        navigator.clipboard.writeText
+            ("zunna.digital47@gmail.com");
+    }
+
+    function qris(){
+        navigator.clipboard.writeText
+            ("https://drive.google.com/file/d/1yh_hiiVrf2aWWIR7dM5uj1M_6q3I68sd/view?usp=drive_link");
+    }
+</script>
 
 <script src="/js/toggleHandler.js"></script>
 <script src="/js/searchBook.js"></script>
